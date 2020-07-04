@@ -2,6 +2,7 @@
   <div class="logo vh-25 dt w-100">
     <div class="text measure-wide">
       <span class="title">pandashop</span>
+      <div class="pandahr"></div>
     </div>
   </div>
 </template>
@@ -10,19 +11,33 @@
 .text {
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,0.9)
 }
 .logo {
-  background-image: url('~@/static/panda.png');
-  background-size: contain;
-  background-repeat: no-repeat;
   animation: 1s appear;
   margin: auto;
   font-family: 'Sacramento', sans-serif;
   font-size: 3rem;
 }
-.text span {
-  text-align: right;
+.pandahr {
+  background-image: url('~@/static/pandasmall.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 5rem;
+  position: relative;
+  z-index: 800;
+  animation-name: panda;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.rainbow {
+  position: relative;
+  z-index: 1000;
+}
+.title {
+  position: relative;
+  z-index: 1000;
 }
 .eachLetters {
   display: block;
@@ -36,6 +51,14 @@
   0% {
     opacity: 0;
   }
+}
+
+@keyframes panda {
+  0% { transform: rotate(0deg) }
+  25% { transform: rotate(30deg) }
+  50% { transform: rotate(0deg) }
+  75% { transform: rotate(-30deg) }
+  100% { transform: rotate(0deg) }
 }
 </style>
 
@@ -69,8 +92,9 @@ export default {
     .add({
       targets: '.title',
       opacity: 0,
-      duration: 3000,
+      duration: 1000,
       easing: 'easeOutExpo',
+      delay: 3000,
     })
   }
 }

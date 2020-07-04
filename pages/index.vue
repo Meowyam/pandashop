@@ -3,6 +3,8 @@
     <div>
       <Logo />
       <Buttons />
+      <Usefulstuff />
+      <Coolstuff />
     </div>
   </div>
 </template>

@@ -32,11 +32,4 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
-.button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  font-size: 2rem;
-}
 </style>
