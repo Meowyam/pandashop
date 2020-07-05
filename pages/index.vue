@@ -5,6 +5,8 @@
       <Buttons />
       <Usefulstuff />
       <Coolstuff />
+      <Copyright />
+      <Penguin />
     </div>
   </div>
 </template>
@@ -23,4 +25,16 @@ export default {}
   text-align: center;
 }
 
+.stuff {
+  height: 100%;
+  min-height: 10vh;
+  max-height: 10vh;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+}
 </style>

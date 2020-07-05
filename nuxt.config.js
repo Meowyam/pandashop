@@ -39,7 +39,7 @@ export default {
   plugins: [
     '~/plugins/anime.js',
     '~/plugins/fontawesome.js',
-    '~/plugins/tooltip.js'
+    '~/plugins/tooltip.js',
   ],
   /*
   ** Auto import components

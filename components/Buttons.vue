@@ -60,27 +60,12 @@
       <font-awesome-icon :icon="['fas', 'envelope']"
        alt="E-mail me" />
     </a>
-    <div class="copyright moon-gray">
-      Copyright © 2020 chilon.net. All rights reserved.
-    </div>
   </div>
 </template>
 
 <style>
 .links {
   padding-top: 15px;
-}
-
-.button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
-}
-
-.copyright {
-  font-size: 0.8rem;
-  margin-top: 1rem;
 }
 </style>
 
