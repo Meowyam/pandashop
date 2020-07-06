@@ -1,12 +1,14 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <Buttons />
-      <Usefulstuff />
-      <Coolstuff />
-      <Copyright />
-      <Penguin />
+    <div class="pa3 outside">
+      <div class="bg-white pa2">
+        <Logo />
+        <Buttons />
+        <Usefulstuff />
+        <Coolstuff />
+        <Penguin />
+        <Copyright />
+      </div>
     </div>
   </div>
 </template>
@@ -25,16 +27,21 @@ export default {}
   text-align: center;
 }
 
+.outside {
+  background-color: rgba(255,255,255,0.8);
+}
+
 .stuff {
   height: 100%;
   min-height: 10vh;
   max-height: 10vh;
+  margin-bottom: 1rem;
 }
 
 .button {
   display: inline-block;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 </style>

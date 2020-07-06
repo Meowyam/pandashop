@@ -1,5 +1,5 @@
 <template>
-  <div class="logo vh-25 dt w-100">
+  <div class="logo vh-15 dt w-100">
     <div class="text measure-wide">
       <span class="title">pandashop</span>
       <div class="pandahr"></div>
@@ -8,13 +8,16 @@
 </template>
 
 <style>
+.flower {
+  width: 10%;
+  height: 10%;
+}
 .text {
   width: 100%;
   height: 100%;
 }
 .logo {
   animation: 1s appear;
-  margin: auto;
   font-family: 'Sacramento', sans-serif;
   font-size: 3rem;
 }

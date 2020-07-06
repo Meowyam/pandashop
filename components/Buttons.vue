@@ -1,5 +1,5 @@
 <template>
-  <div class="links">
+  <div class="links vh-10">
     <a
       href="https://www.linkedin.com/in/meowyam/"
       target="_blank"
@@ -65,7 +65,7 @@
 
 <style>
 .links {
-  padding-top: 15px;
+  padding-top: 1rem;
 }
 </style>
 

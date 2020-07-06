@@ -1,5 +1,5 @@
 <template>
-  <div class="copyright moon-gray">
+  <div class="copyright moon-gray pt2">
     Copyright © 2020 chilon.net. All rights reserved.
   </div>
 </template>

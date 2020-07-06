@@ -28,6 +28,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-image: url('~@/static/flower.gif');
+  background-repeat: repeat;
+}
+
 *,
 *::before,
 *::after {
