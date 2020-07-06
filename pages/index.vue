@@ -41,7 +41,13 @@ export default {}
 .button {
   display: inline-block;
   text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 48em) {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
+
 </style>
