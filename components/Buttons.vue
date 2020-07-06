@@ -5,7 +5,7 @@
       target="_blank"
       rel="noopener noreferrer"
       class="button br-pill white bg-dark-pink dim"
-      v-tooltip="'Link to my linkedin'"
+      v-tooltip.bottom="'Link to my linkedin'"
       @mouseover="logoOn('.fa-linkedin')"
       @mouseout="logoOff('.fa-linkedin')"
     >
@@ -17,7 +17,7 @@
       target="_blank"
       rel="noopener noreferrer"
       class="button br-pill white bg-orange dim"
-      v-tooltip="'Link to my github'"
+      v-tooltip.bottom="'Link to my github'"
       @mouseover="logoOn('.fa-github-alt')"
       @mouseout="logoOff('.fa-github-alt')"
     >
@@ -25,11 +25,23 @@
        alt="Link to my github" />
     </a>
     <a
-      href="https://instagram.com/the.panda.shoppe"
+      href="https://meowyam.github.io/blog/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button br-pill white bg-gold dim"
+      v-tooltip.bottom="'Link to my blog'"
+      @mouseover="logoOn('.fa-edit')"
+      @mouseout="logoOff('.fa-edit')"
+    >
+      <font-awesome-icon :icon="['fas', 'edit']"
+       alt="Link to my blog" />
+    </a>
+    <a
+      href="https://instagram.com/h3110.p4nd4"
       target="_blank"
       rel="noopener noreferrer"
       class="button br-pill white bg-green"
-      v-tooltip="'Link to my instagram'"
+      v-tooltip.bottom="'Link to my instagram'"
       @mouseover="logoOn('.fa-instagram')"
       @mouseout="logoOff('.fa-instagram')"
     >
@@ -41,7 +53,7 @@
       target="_blank"
       rel="noopener noreferrer"
       class="button br-pill white bg-blue dim"
-      v-tooltip="'Link to my twitter'"
+      v-tooltip.bottom="'Link to my twitter'"
       @mouseover="logoOn('.fa-twitter')"
       @mouseout="logoOff('.fa-twitter')"
     >
@@ -53,7 +65,7 @@
       target="_blank"
       rel="noopener noreferrer"
       class="button br-pill white bg-purple dim"
-      v-tooltip="'E-mail me'"
+      v-tooltip.bottom="'E-mail me'"
       @mouseover="logoOn('.fa-envelope')"
       @mouseout="logoOff('.fa-envelope')"
     >
@@ -66,6 +78,15 @@
 <style>
 .links {
   padding-top: 1rem;
+}
+.tooltip {
+  z-index: 5000;
+}
+.tooltip-inner {
+  font-size: 0.8rem;
+  background: #ffd700;
+  color: #555555;
+  padding: 0.5rem;
 }
 </style>
 

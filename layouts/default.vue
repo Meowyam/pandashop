@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  background-image: url('~@/static/flower.gif');
+  background-image: url('~@/static/flowerdesat.gif');
   background-repeat: repeat;
 }
 

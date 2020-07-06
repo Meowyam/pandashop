@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
@@ -15,6 +16,7 @@ config.autoAddCss = false
 library.add(faGithubAlt)
 library.add(faLinkedin)
 library.add(faEnvelope)
+library.add(faEdit)
 library.add(faInstagram)
 library.add(faTwitter)
 
