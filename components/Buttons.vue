@@ -8,6 +8,7 @@
       v-tooltip.bottom="'Link to my linkedin'"
       @mouseover="logoOn('.fa-linkedin')"
       @mouseout="logoOff('.fa-linkedin')"
+      aria-label="LinkedIn"
     >
       <font-awesome-icon :icon="['fab', 'linkedin']"
        alt="Link to my linkedin" />
@@ -20,6 +21,7 @@
       v-tooltip.bottom="'Link to my github'"
       @mouseover="logoOn('.fa-github-alt')"
       @mouseout="logoOff('.fa-github-alt')"
+      aria-label="Github"
     >
       <font-awesome-icon :icon="['fab', 'github-alt']"
        alt="Link to my github" />
@@ -32,6 +34,7 @@
       v-tooltip.bottom="'Link to my blog'"
       @mouseover="logoOn('.fa-edit')"
       @mouseout="logoOff('.fa-edit')"
+      aria-label="Blog"
     >
       <font-awesome-icon :icon="['fas', 'edit']"
        alt="Link to my blog" />
@@ -44,6 +47,7 @@
       v-tooltip.bottom="'Link to my instagram'"
       @mouseover="logoOn('.fa-instagram')"
       @mouseout="logoOff('.fa-instagram')"
+      aria-label="Instagram"
     >
       <font-awesome-icon :icon="['fab', 'instagram']"
        alt="Link to my instagram" />
@@ -56,6 +60,7 @@
       v-tooltip.bottom="'Link to my twitter'"
       @mouseover="logoOn('.fa-twitter')"
       @mouseout="logoOff('.fa-twitter')"
+      aria-label="Twitter"
     >
       <font-awesome-icon :icon="['fab', 'twitter']"
        alt="Link to my twitter" />
@@ -68,6 +73,7 @@
       v-tooltip.bottom="'E-mail me'"
       @mouseover="logoOn('.fa-envelope')"
       @mouseout="logoOff('.fa-envelope')"
+      aria-label="Email"
     >
       <font-awesome-icon :icon="['fas', 'envelope']"
        alt="E-mail me" />

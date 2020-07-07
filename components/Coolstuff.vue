@@ -1,27 +1,27 @@
 <template>
   <div class="cool">
-    <div class="showhide avenir button br-pill white bg-hot-pink pointer mb2"
+    <div class="showhide avenir button br-pill white pointer mb2"
     @click="toggle=!toggle; slide()">
       Cool Stuff
     </div>
     <div class="center mw6 pa2 stuff-holder" v-show="toggle">
       <div class="fl w-third pa2 stuff">
-        <a href="/sprites" class="link mid-gray hover-hot-pink fw6 avenir">spritesheet</a>
+        <a href="/sprites" class="link mid-gray hover-dark-pink fw6 avenir">spritesheet</a>
       </div>
       <div class="fl w-third pa2 stuff">
-        <a href="/canvas" class="link mid-gray hover-hot-pink fw6 avenir">some canvas animations</a>
+        <a href="/canvas" class="link mid-gray hover-dark-pink fw6 avenir">some canvas animations</a>
       </div>
       <div class="fl w-third pa2 stuff">
-        <a href="/nonukes" class="link mid-gray hover-hot-pink fw6 avenir">no nukes protest svg</a>
+        <a href="/nonukes" class="link mid-gray hover-dark-pink fw6 avenir">no nukes protest svg</a>
       </div>
       <div class="fl w-third pa2 stuff">
-        <a href="https://snowglobe.netlify.app" class="link mid-gray hover-hot-pink fw6 avenir">snowglobe</a>
+        <a href="https://snowglobe.netlify.app" class="link mid-gray hover-dark-pink fw6 avenir">snowglobe</a>
       </div>
       <div class="fl w-third pa2 stuff">
-        <a href="/games/bounce" class="link mid-gray hover-hot-pink fw6 avenir">pong</a>
+        <a href="/games/bounce" class="link mid-gray hover-dark-pink fw6 avenir">pong</a>
       </div>
       <div class="fl w-third pa2 stuff">
-        <a href="/games/penguin" class="link mid-gray hover-hot-pink fw6 avenir">penguin memory game</a>
+        <a href="/games/penguin" class="link mid-gray hover-dark-pink fw6 avenir">penguin memory game</a>
       </div>
     </div>
   </div>
@@ -64,5 +64,8 @@ export default {
   }
   .showhide {
     font-family: 'Pacifico', sans-serif;
+  }
+  .cool .showhide {
+    background-color: #E50081;
   }
 </style>

@@ -57,4 +57,8 @@ export default {
   .showhide {
     font-family: 'Pacifico', sans-serif;
   }
+
+  .useful .showhide {
+    background-color: #9742FF;
+  }
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <div class="logo vh-15 dt w-100">
+  <header class="logo vh-15 dt w-100">
     <div class="text measure-wide">
-      <span class="title">pandashop</span>
+      <h1 class="title">pandashop</h1>
       <div class="pandahr"></div>
     </div>
-  </div>
+  </header>
 </template>
 
 <style>
@@ -15,6 +15,10 @@
 .text {
   width: 100%;
   height: 100%;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
 }
 .logo {
   animation: 1s appear;
@@ -87,7 +91,6 @@ export default {
       targets: '.title .letter',
       opacity: [0,1],
       translateZ: 0,
-      rotate: 90,
       easing: "easeInExpo",
       duration: 1000,
       delay: (el, i) => 300*i

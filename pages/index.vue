@@ -3,10 +3,12 @@
     <div class="pa3 outside">
       <div class="bg-white pa2">
         <Logo />
-        <Buttons />
-        <Usefulstuff />
-        <Coolstuff />
-        <Penguin />
+        <main>
+          <Buttons />
+          <Usefulstuff />
+          <Coolstuff />
+          <Penguin />
+        </main>
         <Copyright />
       </div>
     </div>
@@ -38,16 +40,22 @@ export default {}
   margin-bottom: 1rem;
 }
 
-.button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.2rem 0.5rem;
-  font-size: 1.2rem;
+@media only screen and (max-width:767px) {
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+  }
 }
 
-@media screen and (min-width: 48em) {
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+@media screen and (min-width: 768px) {
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
 }
 
 </style>

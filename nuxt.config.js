@@ -16,6 +16,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'Pandashop',
     meta: [
       { charset: 'utf-8' },
