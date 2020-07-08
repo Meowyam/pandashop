@@ -8,6 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+.deeper-pink {
+  color: #FF2491;
+}
+
 
 html {
   font-family:
@@ -38,5 +42,11 @@ body {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.showhide {
+  font-family: 'Pacifico', sans-serif;
+  border-width: 4px;
+  border-style: solid;
 }
 </style>

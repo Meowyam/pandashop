@@ -23,7 +23,6 @@ h1 {
 .logo {
   animation: 1s appear;
   font-family: 'Sacramento', sans-serif;
-  font-size: 3rem;
 }
 .pandahr {
   background-image: url('~@/static/pandasmall.png');
@@ -45,6 +44,9 @@ h1 {
 .title {
   position: relative;
   z-index: 1000;
+}
+.title span {
+  display: inline-block;
 }
 .eachLetters {
   display: block;
@@ -88,19 +90,12 @@ export default {
       loop: true,
     })
     .add({
-      targets: '.title .letter',
-      opacity: [0,1],
-      translateZ: 0,
-      easing: "easeInExpo",
-      duration: 1000,
-      delay: (el, i) => 300*i
-    })
-    .add({
-      targets: '.title',
-      opacity: 0,
-      duration: 1000,
-      easing: 'easeOutExpo',
-      delay: 3000,
+      targets: '.letter',
+      rotateY: [0,360],
+      easing: "easeOutQuart",
+      duration: 2000,
+      delay: (el, i) => 500*i,
+      endDelay: 3000,
     })
   }
 }

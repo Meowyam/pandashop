@@ -27,7 +27,7 @@
        alt="Link to my github" />
     </a>
     <a
-      href="https://meowyam.github.io/blog/"
+      href="https://blog.pandashop.co.uk"
       target="_blank"
       rel="noopener noreferrer"
       class="button br-pill white bg-gold dim"

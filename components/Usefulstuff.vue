@@ -1,18 +1,18 @@
 <template>
   <div class="useful">
-    <div class="showhide avenir button br-pill white bg-light-purple pointer mb2"
-    @click="toggle=!toggle; slide()">
+    <div class="showhide avenir button light-purple bg-white pointer mb2"
+    @click="toggle=!toggle; slide()" role="button" aria-pressed="false">
       Useful Stuff
     </div>
     <div class="center mw6 pa2 stuff-holder" v-show="toggle">
       <div class="fl w-third pa2 stuff">
-        <a href="https://libcardgen.netlify.app/" class="link mid-gray hover-purple fw6 avenir">Library card generator</a>
+        <a href="https://libcardgen.netlify.app/" class="link fw6 avenir">library card generator</a>
       </div>
       <div class="fl w-third pa2 stuff">
-        <a href="http://pandashop.co.uk/tumblrtag" class="link mid-gray hover-purple fw6 avenir">tumblr tag cloud generator</a>
+        <a href="http://pandashop.co.uk/tumblrtag" class="link fw6 avenir">tumblr tag cloud generator</a>
       </div>
-      <div class="fl w-third pa2 stuff">
-        <a href="http://chilon.net:8092" class="link mid-gray hover-purple fw6 avenir">timepuncher</a>
+      <div class="fl w-third pa2 stuff v-mid">
+        <a href="http://chilon.net:8092" class="link fw6 avenir">timepuncher</a>
       </div>
     </div>
   </div>
@@ -54,11 +54,23 @@ export default {
     margin-top: 1.5rem;
   }
 
-  .showhide {
-    font-family: 'Pacifico', sans-serif;
+  .useful .showhide {
+    border-color: mediumspringgreen;
+    background-color: lightyellow;
+    box-shadow: 3px 6px mediumspringgreen;
   }
 
-  .useful .showhide {
-    background-color: #9742FF;
+  .useful .showhide:hover {
+    box-shadow: 3px 6px turquoise;
+    background-color: honeydew;
   }
+
+  .useful .stuff a {
+    color: #008080;
+  }
+
+  .useful .stuff a:hover {
+    color: #9400D3;
+  }
+
 </style>
